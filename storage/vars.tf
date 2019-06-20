@@ -1,0 +1,46 @@
+variable "resource_group_name" {
+  description = "Resouce group to which the storage account belongs to"
+}
+
+variable "location" {
+  description = "Location of the storage account"
+  default = "westus"
+}
+
+variable "storage_account_name" {
+  description = "Storage account name"
+  type ="string"
+}
+
+variable "storage_container_name" {
+  description = "Storage container name"
+  default = "vhds"
+}
+
+variable "blob_name" {
+    description = "Storage blob name"
+    type ="string"
+}
+
+variable "account_tier" {
+  description = "Storage account tier"
+  default = "Standard"
+}
+
+variable "account_replication_type" {
+  description = "Storage account replication type"
+  default = "LRS"
+}
+
+variable "container_access_type" {
+  description = "Storage container access type"
+  default = "private"
+}
+
+variable "blob_size" {
+  description = "Azure blob size"
+  default = "5120"
+}
+
+
+
