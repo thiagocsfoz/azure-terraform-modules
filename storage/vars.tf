@@ -17,11 +17,6 @@ variable "storage_container_name" {
   default = "vhds"
 }
 
-variable "blob_name" {
-    description = "Storage blob name"
-    type ="string"
-}
-
 variable "account_tier" {
   description = "Storage account tier"
   default = "Standard"
