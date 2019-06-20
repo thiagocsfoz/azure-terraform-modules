@@ -37,10 +37,5 @@ variable "container_access_type" {
   default = "private"
 }
 
-variable "blob_size" {
-  description = "Azure blob size"
-  default = "5120"
-}
-
 
 
