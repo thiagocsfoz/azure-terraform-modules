@@ -3,11 +3,6 @@ variable "registry_name" {
   type = "string"
 }
 
-variable "geo_locations" {
-  description = "Locations to place the image"
-  type= "list"
-}
-
 variable "resource_group_name" {
   description = "Name of the resource group"
   type = "string"
