@@ -1,10 +1,10 @@
 variable "registry_name" {
-    name = "Name of the azure container registry"
-    type = "string"
+  description = "Name of the azure container registry"
+  type = "string"
 }
 
 variable "geo_locations" {
-  name = "Locations to place the image"
+  description = "Locations to place the image"
   type= "list"
 }
 
