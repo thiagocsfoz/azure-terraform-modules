@@ -13,8 +13,9 @@ variable "resouce_group_location" {
   type = "string"
 }
 
-variable "storage_id" {
-  description = "Storage ID of the storage account"
+variable "sku_type" {
   type = "string"
+  default = "Basic"
 }
+
 
