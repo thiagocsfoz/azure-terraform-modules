@@ -12,3 +12,9 @@ variable "resouce_group_location" {
   description = "Location of the resource group"
   type = "string"
 }
+
+variable "storage_id" {
+  description = "Storage ID of the storage account"
+  type = "string"
+}
+
