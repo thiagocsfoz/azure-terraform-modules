@@ -1,13 +1,13 @@
-variable "kubernetes_cluster_name" {
-  type="string"
-}
-
 variable "resource_group_name" {
   type = "string"
 }
 
 variable "resouce_group_location" {
   type = "string"
+}
+
+variable "kubernetes_cluster_name" {
+  type="string"
 }
 
 variable "dns_prefix" {
@@ -23,7 +23,7 @@ variable "client_secret" {
 }
 
 variable "vm_size" {
-  default="Standard_B1s"
+  default="Standard_D1_v2"
   type = "string"
 }
 
