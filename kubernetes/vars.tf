@@ -42,6 +42,18 @@ variable "os_disk_size_gb" {
   type = "string"
 }
 
+variable "analytics_sku" {
+  default = "Free"
+  type = "string"
+}
+
+variable "retention_in_days" {
+  default = "7"
+  type = "string"
+}
+
+
+
 
 
 
