@@ -15,3 +15,7 @@ variable "failover_location" {
   type = "string"
 }
 
+variable "cosmos_db_name" {
+  type = "string"
+}
+
