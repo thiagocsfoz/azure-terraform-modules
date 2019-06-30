@@ -14,3 +14,18 @@ variable "storage_connection_string" {
     type = "string"
 }
 
+variable "host_name" {
+  type = "string"
+}
+
+variable "master_key" {
+  type = "string"
+}
+
+variable "database_uri" {
+  type = "string"
+}
+
+variable "collection_uri" {
+  type = "string"
+}
