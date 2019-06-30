@@ -1,11 +1,12 @@
 resource "azurerm_app_service_plan" "app_service_plan" {
-  name                = "azure-functions-test-service-plan"
+  name                = "azure-functions-service-plan"
   location            = "${var.resouce_group_location}"
   resource_group_name = "${var.resource_group_name}"
+  kind                =  "FunctionApp"
 
   sku {
-    tier = "Standard"
-    size = "S1"
+    tier = "Dynamic"
+    size = "Y1"
   }
 }
 
@@ -22,5 +23,6 @@ resource "azurerm_function_app" "function_app" {
     DATABASE_URI = "${var.database_uri}"
     COLLECTION_URI = "${var.collection_uri}"
     FUNCTIONS_WORKER_RUNTIME = "${var.runtime}"
+    WEBSITE_RUN_FROM_PACKAGE = "${var.run_from_package}"
   }
 }
