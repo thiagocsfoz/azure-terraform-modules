@@ -21,5 +21,6 @@ resource "azurerm_function_app" "function_app" {
     MASTER_KEY = "${var.master_key}"
     DATABASE_URI = "${var.database_uri}"
     COLLECTION_URI = "${var.collection_uri}"
+    FUNCTIONS_WORKER_RUNTIME = "${var.runtime}"
   }
 }

@@ -29,3 +29,13 @@ variable "database_uri" {
 variable "collection_uri" {
   type = "string"
 }
+
+variable "runtime" {
+  type = "string"
+  default = "java"
+}
+
+variable "run_from_package" {
+  default = true
+}
+
