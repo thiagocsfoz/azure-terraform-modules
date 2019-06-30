@@ -26,3 +26,10 @@ resource "azurerm_function_app" "function_app" {
     WEBSITE_RUN_FROM_PACKAGE = "${var.run_from_package}"
   }
 }
+
+resource "azurerm_application_insights" "app_insights" {
+  name                = "${var.function_app_name}-appinsights"
+  location            = "${var.resouce_group_location}"
+  resource_group_name = "${var.resource_group_name}"
+  application_type    = "java"
+}
