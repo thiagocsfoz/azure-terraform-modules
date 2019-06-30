@@ -27,5 +27,5 @@ output "secondary_master_key" {
 }
 
 output "connection_strings" {
-  value = "${azurerm_cosmosdb_account.cosmos_account.cosmos_account.connection_strings}"
+  value = "${azurerm_cosmosdb_account.cosmos_account.connection_strings}"
 }
