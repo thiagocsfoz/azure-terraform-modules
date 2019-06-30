@@ -29,7 +29,7 @@ resource "azurerm_function_app" "function_app" {
 
 resource "azurerm_application_insights" "app_insights" {
   name                = "${var.function_app_name}-appinsights"
-  location            = "${var.resouce_group_location}"
+  location            = "${var.app_insights_location}"
   resource_group_name = "${var.resource_group_name}"
   application_type    = "java"
 }

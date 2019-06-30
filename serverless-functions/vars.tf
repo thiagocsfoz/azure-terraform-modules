@@ -38,4 +38,8 @@ variable "runtime" {
 variable "run_from_package" {
   default = true
 }
+variable "app_insights_location" {
+  type = "string"
+  default = "centralus"
+}
 
