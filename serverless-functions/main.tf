@@ -24,6 +24,7 @@ resource "azurerm_function_app" "function_app" {
     COLLECTION_URI = "${var.collection_uri}"
     FUNCTIONS_WORKER_RUNTIME = "${var.runtime}"
     WEBSITE_RUN_FROM_PACKAGE = "${var.run_from_package}"
+    APPINSIGHTS_INSTRUMENTATIONKEY = "${azurerm_application_insights.app_insights.instrumentation_key}"
   }
 }
 
