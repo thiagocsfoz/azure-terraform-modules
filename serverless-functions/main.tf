@@ -2,7 +2,7 @@ resource "azurerm_app_service_plan" "app_service_plan" {
   name                = "azure-functions-service-plan"
   location            = "${var.resouce_group_location}"
   resource_group_name = "${var.resource_group_name}"
-  kind                =  "Linux"
+  kind                =  "FunctionApp"
 
   sku {
     tier = "Dynamic"
