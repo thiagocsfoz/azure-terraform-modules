@@ -26,10 +26,6 @@ resource "azurerm_function_app" "function_app" {
     WEBSITE_RUN_FROM_PACKAGE = "${var.run_from_package}"
     APPINSIGHTS_INSTRUMENTATIONKEY = "${azurerm_application_insights.app_insights.instrumentation_key}"
   }
-
-  site_config {
-    linux_fx_version = "JAVA|8-jre8"
-  }
 }
 
 resource "azurerm_application_insights" "app_insights" {
