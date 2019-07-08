@@ -2,7 +2,7 @@ resource "azurerm_app_service_plan" "app_service_plan" {
   name                = "azure-functions-service-plan"
   location            = "${var.resouce_group_location}"
   resource_group_name = "${var.resource_group_name}"
-  kind                =  "FunctionApp"
+  kind                =  "Linux"
 
   sku {
     tier = "Dynamic"
@@ -25,6 +25,10 @@ resource "azurerm_function_app" "function_app" {
     FUNCTIONS_WORKER_RUNTIME = "${var.runtime}"
     WEBSITE_RUN_FROM_PACKAGE = "${var.run_from_package}"
     APPINSIGHTS_INSTRUMENTATIONKEY = "${azurerm_application_insights.app_insights.instrumentation_key}"
+  }
+
+  site_config {
+    linux_fx_version = "JAVA|8-jre8"
   }
 }
 
