@@ -19,7 +19,7 @@ variable "client_id" {
 }
 
 variable "client_secret" {
-  type = "string"
+  type = string
 }
 
 variable "vm_size" {
