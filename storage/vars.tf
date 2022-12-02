@@ -9,7 +9,7 @@ variable "location" {
 
 variable "storage_account_name" {
   description = "Storage account name"
-  type ="string"
+  type =map(string)
 }
 
 variable "storage_container_name" {
