@@ -1,21 +1,21 @@
 variable "resource_group_name" {
-  type = "string"
+  type = string
 }
 
 variable "resouce_group_location" {
-  type = "string"
+  type = string
 }
 
 variable "kubernetes_cluster_name" {
-  type="string"
+  type=string
 }
 
 variable "dns_prefix" {
-  type = "string"
+  type = string
 }
 
 variable "client_id" {
-  type = "string"
+  type = string
 }
 
 variable "client_secret" {
@@ -24,32 +24,32 @@ variable "client_secret" {
 
 variable "vm_size" {
   default="Standard_D1_v2"
-  type = "string"
+  type = string
 }
 
 variable "vm_count" {
-  default = 1
-  type = "string"
+  default = "1"
+  type = string
 }
 
 variable "os_type" {
   default = "Linux"
-  type = "string"
+  type = string
 }
 
 variable "os_disk_size_gb" {
   default = "30"
-  type = "string"
+  type = string
 }
 
 variable "analytics_sku" {
   default = "Free"
-  type = "string"
+  type = string
 }
 
 variable "retention_in_days" {
   default = "7"
-  type = "string"
+  type = string
 }
 
 
