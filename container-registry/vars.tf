@@ -1,18 +1,19 @@
 variable "registry_name" {
-  type = string
+  description = "Name of the azure container registry"
+  type = "string"
 }
 
 variable "resource_group_name" {
-  type = string
+  description = "Name of the resource group"
+  type = "string"
 }
 
 variable "resouce_group_location" {
-  type = string
+  description = "Location of the resource group"
+  type = "string"
 }
 
 variable "sku_type" {
-  type = string
+  type = "string"
   default = "Basic"
 }
-
-
